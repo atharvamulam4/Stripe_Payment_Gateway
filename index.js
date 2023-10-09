@@ -3,8 +3,8 @@ const bodyParser=require('body-parser');
 const path=require('path');
 const app=express();
 
-const PUBLISHABLE_KEY="pk_test_51LyX6LSBN8d4cdyd9yWCVJIDoO7ASp7ScwMAQNhjScOs0vm5FRHs4O45KMXQ1FfjCtZnpyhtK78fAfBJsughvq5J00SNSIx9EI"
-const SECRET_KEY="sk_test_51LyX6LSBN8d4cdydk1hfD6FCsvQxcKRmPwCtb8SDQTDT36vMU68ful2yEo5JN9J3h4stE8SwLTCr1umMfMEtuiUh00Fh0C0Xmo"
+const PUBLISHABLE_KEY="pk_test_51NypBZSDiIWuXuEIEzsStQDzVDbJz8AzgXSo2X3mES6XDrRVXiDdTM2Arn1jlYxsS94AWdS5SjBinZE3iBBmVEm100TBvieOBH"
+const SECRET_KEY="sk_test_51NypBZSDiIWuXuEI7l88ZwxVklCPs8uCkIHQu4pbzstytllOQMG3zqwBXVPvsCbeOYMWqhPg5SQwrnnkJL9PIbhI00uh7FuEjb"
 
 const stripe=require("stripe")(SECRET_KEY);
 
@@ -31,7 +31,7 @@ app.post('/payment',(req,res)=>{
     stripe.customers.create({
         email:req.body.stripeEmail,
         source:req.body.stripeToken,
-        name:'Ayush Anand',
+        name:'ATHARVA MULAM ',
         address:{
             line1:'btm layout bangalore',
             postal_code:'560076',
